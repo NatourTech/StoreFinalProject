@@ -19,3 +19,27 @@ header > a {
 
 
 }
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px #404040 solid;
+  margin: 0.5rem;
+}
+
+.product > img {
+  width: 100%;
+  max-width: 400px ;
+}
+
+.product-name {
+  padding: 1rem;
+}
+.product-price {
+  padding: 1rem;
+ 
+}

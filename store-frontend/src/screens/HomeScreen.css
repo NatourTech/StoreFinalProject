@@ -1,0 +1,21 @@
+.catagories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cat {
+    /* border: 1px #404040 solid; */
+    margin: 0.5rem;
+    text-align:center;
+}
+
+.cat > img {
+    width: 100%;
+    max-width: 400px ;
+}
+
+
+.cat >  h1  {
+    padding: 1rem;
+}
