@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../data";
+import { Link } from "react-router-dom";
 
 function productScreen() {
   return (
@@ -9,7 +10,7 @@ function productScreen() {
         {/* Products card */}
         {data.products.map((product) => (
           //  {/* Product card */}
-          <a href={`/product/${product.id}`}>
+          <Link to={`/office-products/${product.id}`}>
             <div className="product" key={product.id}>
               <img src={product.image} alt={product.name} />
               <div className="product-name">
@@ -27,7 +28,7 @@ function productScreen() {
                 <button>Add To cart</button>
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
