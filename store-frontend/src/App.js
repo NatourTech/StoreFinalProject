@@ -5,7 +5,6 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import Product from "./screens/Product";
 
-
 function App() {
   return (
     <BrowserRouter>
