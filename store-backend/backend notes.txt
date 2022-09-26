@@ -1,0 +1,13 @@
+##Plan to Create Node.js Server:
+1) run npm init in the footer 
+2) update package.json set type: module 
+3) add .js to imports
+4) npm install express
+5) create server.js
+6) add start command as node backend/serve.js
+7) requre express
+8) create route for/ return is ready
+9) move products.js from frontend to backend 
+10) craete route for api/products
+11) Return products 
+12) run npm start 
