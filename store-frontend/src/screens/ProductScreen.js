@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-//import data from '../data';
+
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -12,6 +12,7 @@ function ProductScreen() {
     };
     fetchData();
   }, []);
+
   return (
     <div>
       <h1>Feaured Products</h1>
