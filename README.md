@@ -8,7 +8,7 @@
 
  1. #### clone the repo using this command
          `https://github.com/NatourTech/StoreFinalProject.git`
- 2. #### install npm packages
+ 2. #### install npm packages: npm install
  
  
 final project for full stack course, contributed by 4 developers
