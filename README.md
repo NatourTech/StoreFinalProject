@@ -1,8 +1,10 @@
 # Mern - Ecommerce
+A MERN stack e-commerce store with Sign in for users, product display and checkout wizard, add/remove/edit/view product for admin.
 
  - **Frontend -> React JS**
  -  **Backend -> Node JS & Express JS**
  -  **Database -> MongoDB**
+
 
 
 
