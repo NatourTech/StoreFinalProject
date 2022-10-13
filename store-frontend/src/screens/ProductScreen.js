@@ -1,5 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
-
+import React, { useEffect, useReducer} from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import logger from "use-reducer-logger";
@@ -23,7 +22,7 @@ function ProductScreen() {
     loading: true,
     error: "",
   });
-  // const [products, setProducts] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       dispatch({ type: "FETCH_REQUEST" });
@@ -34,7 +33,6 @@ function ProductScreen() {
         dispatch({ type: "FETCH_FAIL", payload: err.message });
       }
 
-      // setProducts(result.data);
     };
     fetchData();
   }, []);
@@ -78,3 +76,6 @@ function ProductScreen() {
 }
 
 export default ProductScreen;
+
+
+
