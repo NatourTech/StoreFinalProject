@@ -1,7 +1,9 @@
+
 import React, { useEffect, useReducer, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import logger from "use-reducer-logger";
+
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -17,6 +19,7 @@ const reducer = (state, action) => {
   }
 };
 function ProductScreen() {
+
   const [{ loading, error, products }, dispatch] = useReducer(logger(reducer), {
     products: [],
     loading: true,
@@ -32,6 +35,7 @@ function ProductScreen() {
       } catch (err) {
         dispatch({ type: "FETCH_FAIL", payload: err.message });
       }
+
 
     };
     fetchData();
