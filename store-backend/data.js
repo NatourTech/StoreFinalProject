@@ -3,8 +3,8 @@ const data = {
     {
       id:'1',
       name: "CLASSERICA",
-      category: "office",
-      price: 60,
+      category: "office test",
+      price: 700,
       image: '/images/oxford.png',
       description: "good product",
       rating: 4.7,
