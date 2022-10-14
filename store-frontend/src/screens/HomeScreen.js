@@ -1,9 +1,14 @@
 import React from "react";
 import "./HomeScreen.css";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 function HomeScreen() {
   return (
     <div className="catagories">
+      {/* change title when back to home */}
+      <Helmet>
+        <title>Insta Store</title>
+      </Helmet>
       {/* cat 1 */}
 
       <Link to="/office-products/" className="homeScreen-link">
