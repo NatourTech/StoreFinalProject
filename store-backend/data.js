@@ -2,7 +2,7 @@ const data = {
   products: [
     {
       id:'1',
-      name: "CLASSERICA",
+      name: "CLASSERICA יומן יומי 15/21מדורג מעורב צבעים ",
       category: "office test",
       price: 700,
       image: '/images/oxford.png',
