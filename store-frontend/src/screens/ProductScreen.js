@@ -1,9 +1,11 @@
 
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useReducer } from "react";
+
 import axios from "axios";
-import { Link } from "react-router-dom";
 import logger from "use-reducer-logger";
 
+import { Col, Row } from "react-bootstrap";
+import Product from "../components/Product";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -36,7 +38,6 @@ function ProductScreen() {
         dispatch({ type: "FETCH_FAIL", payload: err.message });
       }
 
-
     };
     fetchData();
   }, []);
@@ -51,28 +52,17 @@ function ProductScreen() {
         ) : error ? (
           <div>{error}</div>
         ) : (
-          products.map((product) => (
-            //  {/* Product card */}
-            <Link to={`/office-products/${product.id}`}>
-              <div className="product" key={product.id}>
-                <img src={product.image} alt={product.name} />
-                <div className="product-name">
-                  <p>{product.name}</p>
-                </div>
-
-                <div className="productBtn">
-                  <button className="btn plus">+</button>
-                  <input type="text" readOnly="readOnly"></input>
-                  <button className="btn minus">-</button>
-                </div>
-
-                <div className="product-price">
-                  <strong>₪{product.price}</strong>
-                  <button>Add To cart</button>
-                </div>
-              </div>
-            </Link>
-          ))
+          <Row>
+            {products.map(
+              (
+                product // {/* Product card */}
+              ) => (
+                <Col sm={6} md={4} lg={4} className="mb-3" key={product.id}>
+                  <Product product={product} />
+                </Col>
+              )
+            )}
+          </Row>
         )}
       </div>
     </div>
@@ -80,6 +70,3 @@ function ProductScreen() {
 }
 
 export default ProductScreen;
-
-
-
