@@ -30,7 +30,7 @@ function App() {
                 element={<ProductScreen />}
               ></Route>
               <Route
-                path="/office-products/:slug"
+                path="/office-products/:id"
                 element={<Product />}
               ></Route>
             </Routes>

@@ -19,7 +19,7 @@ function Product(props) {
             <div className="product-name contentBox">
               <Card.Title className="card-name">{product.name}</Card.Title>
               <Card.Subtitle>
-                <p>this is great product</p>
+                <p>{product.description}</p>
               </Card.Subtitle>
             </div>
 
