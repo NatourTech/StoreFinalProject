@@ -1,8 +1,12 @@
+
 import React, { useEffect, useReducer } from "react";
+
 import axios from "axios";
 import logger from "use-reducer-logger";
+
 import { Col, Row } from "react-bootstrap";
 import Product from "../components/Product";
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "FETCH_REQUEST":
@@ -17,6 +21,7 @@ const reducer = (state, action) => {
   }
 };
 function ProductScreen() {
+
   const [{ loading, error, products }, dispatch] = useReducer(logger(reducer), {
     products: [],
     loading: true,
@@ -32,6 +37,7 @@ function ProductScreen() {
       } catch (err) {
         dispatch({ type: "FETCH_FAIL", payload: err.message });
       }
+
     };
     fetchData();
   }, []);
