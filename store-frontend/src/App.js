@@ -22,17 +22,14 @@ function App() {
           <NavBarB />
         </header>
         <main>
-          <Container>
+          <Container className="mt-4">
             <Routes>
               <Route path="/" element={<HomeScreen />}></Route>
               <Route
                 path="/office-products"
                 element={<ProductScreen />}
               ></Route>
-              <Route
-                path="/office-products/:id"
-                element={<Product />}
-              ></Route>
+              <Route path="/office-products/:id" element={<Product />}></Route>
             </Routes>
           </Container>
         </main>

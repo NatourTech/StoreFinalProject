@@ -8,6 +8,7 @@ const data = {
       price: 700,
       image: "/images/oxford.png",
       rating: 4.7,
+      countInStock:0
     },
     {
       id: "2",
@@ -17,6 +18,7 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
+      countInStock:10
     },
     {
       id: "3",
@@ -26,6 +28,7 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
+      countInStock:10
     },
     {
       id: "4",
@@ -35,6 +38,7 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
+      countInStock:10
     },
 
     {
@@ -45,6 +49,7 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
+      countInStock:10
     },
 
     {
@@ -55,6 +60,7 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
+      countInStock:10
     },
   ],
 };
