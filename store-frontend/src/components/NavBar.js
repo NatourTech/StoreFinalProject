@@ -2,10 +2,16 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
+import Badge from "react-bootstrap/Badge";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
+import { Link } from "react-router-dom";
+import { Store } from "../Store";
+import { useContext } from "react";
 
 function NavBarB() {
+  const { state } = useContext(Store);
+  const { cart } = state;
   return (
     <Navbar bg="dark" variant={"dark"} expand="lg">
       <Container fluid>
@@ -31,6 +37,19 @@ function NavBarB() {
               <Nav.Link href="#action3">Contact</Nav.Link>
             </LinkContainer>
           </Nav>
+
+          {/* cart */}
+          <Nav className="me-auto">
+            <Link to="/cart" className="nav-link">
+              cart
+              {cart.cartItems.length > 0 && (
+                <Badge pill bg="danger">
+                  {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+                </Badge>
+              )}
+            </Link>
+          </Nav>
+
           <Form className="d-flex">
             <Form.Control
               type="search"
