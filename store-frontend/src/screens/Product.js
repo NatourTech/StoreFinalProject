@@ -47,12 +47,11 @@ function Product() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart } = state;
   const addToCartHandler = async () => {
-    const existItem = cart.cartItems.find((x) => x._id === product._id);
+    const existItem = cart.cartItems.find((x) => x.id === product.id);
     const quantity = existItem ? existItem.quantity + 1 : 1;
-    const { data } = await axios.get(`/api/products/${product._id}`);
-
-    // test
-    console.log(data);
+    const { data } = await axios.get(`/api/products/${product.id}`);
+   
+    
     // validate custmer cart quantity and stock remain
     if (data.countInStock < quantity) {
       window.alert(`Sorry, ${data.countInStock} items remain in stock (- _ -)`);

@@ -13,7 +13,7 @@ function reducer(state, action) {
     case "CART_ADD_ITEM":
       // add to cart
       const newItem = action.payload;
-      const existItem = state.cart.cartItem.find(
+      const existItem = state.cart.cartItems.find(
         (item) => item._id === newItem._id
       );
 
