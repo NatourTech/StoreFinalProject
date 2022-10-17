@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: "1",
       id: "1",
       description: "כיסוי עמיד לגשם ומים למוצרי SONOFF",
       name: "CLASSERICA יומן יומי 15/21מדורג מעורב צבעים ",
@@ -8,9 +9,10 @@ const data = {
       price: 700,
       image: "/images/oxford.png",
       rating: 4.7,
-      countInStock:0
+      countInStock: 0,
     },
     {
+      _id: "2",
       id: "2",
       name: " TOUCH יומן יומי 15/21מדורג מעורב צבעים ",
       category: "office",
@@ -18,9 +20,10 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
-      countInStock:10
+      countInStock: 10,
     },
     {
+      _id: "3",
       id: "3",
       description: "כיסוי עמיד לגשם ומים למוצרי SONOFF",
       name: " TOUCH יומן יומי 15/21מדורג מעורב צבעים ",
@@ -28,9 +31,10 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
-      countInStock:10
+      countInStock: 10,
     },
     {
+      _id: "4",
       id: "4",
       description: "כיסוי עמיד לגשם ומים למוצרי SONOFF",
       name: " TOUCH יומן יומי 15/21מדורג מעורב צבעים ",
@@ -38,10 +42,11 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
-      countInStock:10
+      countInStock: 10,
     },
 
     {
+      _id: "5",
       id: "5",
       description: "כיסוי עמיד לגשם ומים למוצרי SONOFF",
       name: " TOUCH יומן יומי 15/21מדורג מעורב צבעים ",
@@ -49,10 +54,11 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
-      countInStock:10
+      countInStock: 10,
     },
 
     {
+      _id: "6",
       id: "6",
       description: "כיסוי עמיד לגשם ומים למוצרי SONOFF",
       name: " TOUCH יומן יומי 15/21מדורג מעורב צבעים ",
@@ -60,7 +66,7 @@ const data = {
       price: 80,
       image: "/images/oxford.png",
       rating: 4.7,
-      countInStock:10
+      countInStock: 10,
     },
   ],
 };
