@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.site-container{
+.site-container {
   min-height: 100vh;
 }
 
@@ -28,7 +28,7 @@ main {
 
 .product > img {
   width: 100%;
-  max-width: 400px ;
+  max-width: 400px;
 }
 
 .product-name {
@@ -36,9 +36,12 @@ main {
 }
 .product-price {
   padding: 1rem;
- 
 }
 
-.img-large{
+.img-large {
   max-width: 100%;
+}
+
+.small-container {
+  max-width: 600px;
 }

@@ -1,10 +1,11 @@
-import "./App.css";
+import './App.css';
 // import data from "./data";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
-import Product from "./screens/Product";
-import NavBarB from "./components/NavBar";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
+import Product from './screens/Product';
+import NavBarB from './components/NavBar';
+import ScreenSignin from './screens/ScreenSignin';
 import {
   Button,
   Container,
@@ -12,7 +13,7 @@ import {
   Nav,
   Navbar,
   NavDropdown,
-} from "react-bootstrap";
+} from 'react-bootstrap';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
                 element={<ProductScreen />}
               ></Route>
               <Route path="/office-products/:id" element={<Product />}></Route>
+              <Route path="/signin" element={<ScreenSignin />}></Route>
             </Routes>
           </Container>
         </main>
